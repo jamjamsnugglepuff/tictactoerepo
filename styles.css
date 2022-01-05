@@ -1,0 +1,143 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Common Pixel', sans-serif;
+}
+
+button{
+    width: 100%;
+    height: 40px;
+    color: rgb(8, 5, 77);
+    font-size: 1.8em;
+    -webkit-text-stroke: white;
+    -webkit-text-stroke-width: .5px;
+    font-weight: 800;
+    background: rgb(14,10,170);
+background: linear-gradient(0deg, rgba(14,10,170,1) 0%, rgba(94,239,255,1) 100%); 
+    border-color: #120a9a;
+    border-width: 2px;
+    border-bottom-width: 5px;
+    border-style: solid;
+    
+}
+
+button:hover{
+    background: rgb(14,10,170);
+    background: linear-gradient(0deg, rgba(14,10,170,1) 0%, rgba(8,90,168,1) 0%, rgba(94,239,255,1) 100%); 
+    color: #323ea8;
+}
+
+
+.board-col--taken{
+    background-image: url(https://www.kindpng.com/picc/m/14-144132_transparent-wall-cracks-png-wall-cracking-by-hole.png);
+    background-size: contain;
+}
+
+
+.board{
+    margin: 0 auto;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 20px;
+    background-image: url('./canvas.png');
+    background-size: cover;
+    padding: 80px;
+    
+}
+
+.board-col{
+    width: 10vw;
+    height: 10vw;
+    background-color: grey;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+.board-row{
+    display: flex;
+    width:fit-content;
+    
+}
+
+.board-col:hover{
+    background-color: lightgray;
+    cursor: pointer;
+    background-image: url(https://www.kindpng.com/picc/m/14-144132_transparent-wall-cracks-png-wall-cracking-by-hole.png);
+    background-size: contain;
+}
+
+#main-menu{
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/024/903/746/large/sebastian-coria-1-1.jpg?1583915011);
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: column;
+}
+
+.game-header{
+    background: #FCEABB;
+background: -webkit-repeating-radial-gradient(ellipse farthest-corner at center center, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+background: -moz-repeating-radial-gradient(ellipse farthest-corner at center center, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+background: repeating-radial-gradient(ellipse farthest-corner at center center, #FCEABB 0%, #FCCD4D 50%, #F8B500 51%, #FBDF93 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+font-size: 4em;
+   
+z-index: 1;
+    
+font-family: cursive;
+font-size: 12vw;
+}
+
+.btn-container{
+    display: flex;
+    flex-flow: column;
+   
+    
+   
+    
+
+    padding: 20px;
+    background-color: #c5c5c5b9;
+    border-image-slice: 35 138 34 110;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("OneBit-Chain--Arvin61r58.png");
+    border-style: solid;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
+    
+    z-index: 1;
+}
+
+
+#display{
+    border: solid 5px black;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    padding: 40px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(32,32,32,1) 47%, rgba(28,29,29,1) 100%);    
+}
+
+.bat{
+    /* background-color: red; */
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    background-image: url('./bat.gif');
+    background-size: cover;
+}
