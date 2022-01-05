@@ -69,11 +69,11 @@ let system = ((dom_display)=>{
 
                 if(this.win()){
                     // console.log(players[player_turn], 'wins');
-                    console.log('win');
+                    // console.log('win');
                     this.score[player_turn] ++;
                     this.state = 'finished';
                 }else if(this.draw()){
-                    console.log('draw');
+                    // console.log('draw');
                     this.state = 'finished';
                 }
 
@@ -88,7 +88,7 @@ let system = ((dom_display)=>{
              */
             for(let combo of win_conditions){
                 // console.log(this.board[combo[0]], this.board[combo[1]], this.board[combo[2]]);
-                console.log(combo)
+                // console.log(combo)
                 if(
                     this.board[combo[0]] == this.players[player_turn].token &&
                     this.board[combo[1]] == this.players[player_turn].token &&
@@ -194,7 +194,7 @@ let system = ((dom_display)=>{
                     setInterval(() => {
                         bat.style.position = 'absolute';
                         bat.style.left = bat.offsetLeft + movement_speed  + 'px';
-                        console.log(bat.offsetLeft)
+                        // console.log(bat.offsetLeft)
 
                         if(bat.offsetLeft > main_menu.offsetWidth){
                             bat.style.left = 0 + 'px';
@@ -203,7 +203,7 @@ let system = ((dom_display)=>{
 
                     }, 200);
 
-                    console.log(bat);
+                    // console.log(bat);
 
                 }
 
